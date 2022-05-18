@@ -304,40 +304,6 @@ var listingsData = [
       },
     ],
   },
-  {
-    post_id: 10,
-    user: 'Mark Philips',
-    userImg: require('../images/Mark_Philips_60x60.jpg'),
-    postDate: '15/02/2016',
-    address: '33 Universal St.',
-    city: 'Miami',
-    state: 'FL',
-    homeType: 'Studio',
-    rooms: '0',
-    price: 1100,
-    floorSpace: 1350,
-    elevator: true,
-    basement: true,
-    gym: false,
-    pool: true,
-    storage: false,
-    parking: true,
-    image: require('../images/MarkPhilips-554x400.jpg'),
-    images: [
-      {
-        original: require('../images/MarkPhilips-554x400.jpg'),
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
-      },
-      {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1015/250/150/',
-      },
-      {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1019/250/150/',
-      },
-    ],
-  },
 ]
 
 export default listingsData

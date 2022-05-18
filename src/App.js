@@ -130,7 +130,21 @@ const App = () => {
 
   useEffect(() => {
     filteringData()
-  }, [data.city])
+  }, [
+    data.city,
+    data.homeType,
+    data.rooms,
+    data.max_price,
+    data.min_price,
+    data.max_floor_space,
+    data.min_floor_space,
+    data.elevator,
+    data.pool,
+    data.basement,
+    data.gym,
+    data.storage,
+    data.parking,
+  ])
 
   let change = (event) => {
     let name = event.target.name
@@ -224,7 +238,6 @@ const App = () => {
             onChange={change}
             globalState={data}
             changeView={changeView}
-            populateFormsAction={populateForms}
           />
         </div>
       </section>
