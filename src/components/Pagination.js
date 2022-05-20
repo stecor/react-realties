@@ -1,16 +1,21 @@
 import React from 'react'
 
-const Pagination = () => {
+const Pagination = (props) => {
+  const globalState = props.globalState
+  const posts = globalState.filterData
+
+  var pagesArray = []
+  for (var i = 1; i <= posts.length / 4; i++) {
+    console.log(i)
+    pagesArray.push(<li key={i}>{i}</li>)
+  }
   return (
     <section id='pagination'>
       <div className='row'>
         <ul className='pages'>
           <li>Prev</li>
-          <li className='active'>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+          {pagesArray}
+
           <li>next</li>
         </ul>
       </div>
