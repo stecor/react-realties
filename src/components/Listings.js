@@ -1,5 +1,6 @@
 import React from 'react'
 import LoopListings from './LoopListings'
+import Pagination from './Pagination'
 
 const Listings = (props) => {
   const globalState = props.globalState
@@ -51,20 +52,7 @@ const Listings = (props) => {
           <LoopListings globalState={globalState} />
         </div>
       </section>
-
-      <section id='pagination'>
-        <div className='row'>
-          <ul className='pages'>
-            <li>Prev</li>
-            <li className='active'>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>next</li>
-          </ul>
-        </div>
-      </section>
+      <Pagination globalState={globalState} />
     </section>
   )
 }

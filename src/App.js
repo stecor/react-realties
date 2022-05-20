@@ -153,15 +153,10 @@ const App = () => {
         ? event.target.checked
         : event.target.value
 
-    // console.log('name=' + name)
-    // console.log('value=' + value)
-    // console.log(event.target.type)
-
     if (event.target.type === 'number') {
       value = Number(value)
     }
 
-    //setData({ ...data, [name]: value })
     setData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -169,7 +164,6 @@ const App = () => {
   }
 
   const changeView = (viewName) => {
-    //setData({ ...data, view: viewName })
     setData((prevData) => ({
       ...prevData,
       view: viewName,
@@ -214,10 +208,6 @@ const App = () => {
       cities,
     }
 
-    // setData({
-    //   ...data,
-    //   populateFormsData: populateFormsData,
-    // })
     setData((prevData) => ({
       ...prevData,
       populateFormsData: populateFormsData,
