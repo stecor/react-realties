@@ -3,9 +3,10 @@ import React from 'react'
 const Pagination = (props) => {
   const globalState = props.globalState
   const posts = globalState.filterData
+  const pagePosts = 4
 
   var pagesArray = []
-  for (var i = 1; i <= posts.length / 4; i++) {
+  for (var i = 1; i <= posts.length / pagePosts; i++) {
     console.log(i)
     pagesArray.push(<li key={i}>{i}</li>)
   }
