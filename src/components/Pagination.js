@@ -1,22 +1,30 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Pagination = (props) => {
   const globalState = props.globalState
   const posts = globalState.filterData
   const pagePosts = 4
 
-  var pagesArray = []
-  for (var i = 1; i <= posts.length / pagePosts; i++) {
-    console.log(i)
-    pagesArray.push(<li key={i}>{i}</li>)
+  let pagesArray = []
+  for (let number = 1; number <= posts.length / pagePosts; number++) {
+    pagesArray.push(
+      <Link to={`/details/${number}`} key={number}>
+        {number === 1 ? (
+          <li className='active'>{number}</li>
+        ) : (
+          <li>{number}</li>
+        )}
+      </Link>
+    )
   }
+
   return (
     <section id='pagination'>
       <div className='row'>
         <ul className='pages'>
           <li>Prev</li>
           {pagesArray}
-
           <li>next</li>
         </ul>
       </div>
