@@ -4,31 +4,36 @@ import { Link } from 'react-router-dom'
 const Pagination = (props) => {
   const globalState = props.globalState
   const posts = globalState.filterData
-  const pagePosts = 4
-  const pages = posts.length / pagePosts
+  const pagePosts = 8
+  const pages = Math.ceil(posts.length / pagePosts)
+  console.log(pages)
 
   let pagesArray = []
-  if (posts.length >= 1) {
-    for (let number = 1; number <= pages; number++) {
-      pagesArray.push(
-        <Link to={`/details/${number}`} key={number}>
-          {number === 1 ? (
-            <li className='active'>{number}</li>
-          ) : (
-            <li>{number}</li>
-          )}
-        </Link>
-      )
-    }
+  for (let number = 1; number <= pages; number++) {
+    pagesArray.push(
+      <Link to={`/details/${number}`} key={number}>
+        <li>{number}</li>
+      </Link>
+    )
   }
 
   return (
     <section id='pagination'>
       <div className='row'>
         <ul className='pages'>
-          <li>Prev</li>
-          {pagesArray}
-          <li>next</li>
+          {pagesArray.length > 0 ? (
+            <div>
+              <li>next</li>
+              {pagesArray}
+              <li>Prev</li>
+            </div>
+          ) : (
+            <div>
+              <h1 style={{ padding: '50px', margin: 'auto' }}>
+                There is nothing here!
+              </h1>
+            </div>
+          )}
         </ul>
       </div>
     </section>
