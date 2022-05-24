@@ -128,9 +128,7 @@ const App = () => {
     setData({ ...data, filterData: newData })
   }
 
-  useEffect(() => {
-    filteringData()
-  }, [
+  const effect = [
     data.city,
     data.homeType,
     data.rooms,
@@ -144,7 +142,11 @@ const App = () => {
     data.gym,
     data.storage,
     data.parking,
-  ])
+  ]
+
+  useEffect(() => {
+    filteringData()
+  }, effect)
 
   let change = (event) => {
     let name = event.target.name

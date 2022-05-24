@@ -6,7 +6,6 @@ const Pagination = (props) => {
   const posts = globalState.filterData
   const pagePosts = 8
   const pages = Math.ceil(posts.length / pagePosts)
-  console.log(pages)
 
   let pagesArray = []
   for (let number = 1; number <= pages; number++) {

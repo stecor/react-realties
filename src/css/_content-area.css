@@ -9,6 +9,34 @@
   max-width: 300px;
   float: left;
 }
+
+@media only screen and (max-width: 768px) {
+  #content-area {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  #filter {
+    background: #f2f2f2;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #listings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #listings .search-area input[type='text'] {
+    margin: auto;
+  }
+}
+
 #filter .inside {
   padding: 20px;
   max-width: 300px;
