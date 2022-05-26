@@ -254,6 +254,8 @@ var listingsData = [
     pool: false,
     storage: true,
     parking: false,
+    description:
+      'Welcome To 93 Rosshaven - An Absolute Showstopper! In Brand New Pinevalley Estates. Open Concept: Upgraded Flooring; Large Eat-In Kit W/ Upgraded Cabinetry & Cntr Islnd; 10Ft Ceilings On Main; 9Ft Ceilings On 2nd Flr; Upgraded Appls, Window Coverings, Light Fixtures; Pot Lights, Coffered Ceilings,9Ft Solid Doors On Main, 8Ft Solid Doors On 2nd; Blk Upgrade Windows & Doors, Huge W/I Closet In Master Bdrm; Wrought Iron Pickets; Plaster Moulding Throughout; Quartz Counter Top; Bathroom Ensuites; The Upgrades Are Endless!**** EXTRAS **** Fridge, Stove, Hood Fan, Dishwasher, Washer/Dryer, Elf',
     image: require('../images/AndrewCarl_554x363.jpg'),
     images: [
       {
