@@ -5,7 +5,7 @@ const PostImage = (props) => {
   const images = props.post.images
 
   return (
-    <div>
+    <div style={{ width: '800px', margin: '100px' }}>
       <ImageGallery items={images} />
     </div>
   )

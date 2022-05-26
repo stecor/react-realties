@@ -18,17 +18,10 @@ const Details = () => {
     <div>
       <Header />
       <section id='content-area'>
-        <div
-          className='postPage'
-          style={{ width: '100', padding: '3rem 4rem' }}
-        >
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <h1>{post.homeType}</h1>
-          </div>
+        <div style={{ display: 'flex' }}>
+          <PostImage post={post} style={{ padding: '20px', flex: 1 }} />
 
-          <PostImage post={post} />
-
-          <PostInfo post={post} />
+          <PostInfo post={post} style={{ padding: '20px', flex: 1 }} />
         </div>
       </section>
     </div>
