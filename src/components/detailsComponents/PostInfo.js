@@ -56,10 +56,12 @@ const PostInfo = (props) => {
           width: '800px',
           height: '200px',
           border: '1px lightgray solid',
-          backgroundColor: 'lightgray',
+          backgroundColor: '#c8c8c8',
           padding: '20px',
         }}
       >
+        Description: <br />
+        <br />
         {post.description}
       </div>
     </div>

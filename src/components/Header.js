@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <div>
       <header>
         <div className='logo'>
-          <span className='detailLogo'>realties.ca</span>
-          <br />
-          real estate
+          <Link to={`/`} style={{ textDecoration: 'none' }}>
+            <span className='detailLogo'>realties.ca</span>
+            <br />
+            <span className='textLogo'>real estate</span>
+          </Link>
         </div>
 
         <nav>

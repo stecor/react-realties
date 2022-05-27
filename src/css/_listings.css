@@ -9,9 +9,19 @@ header .logo {
   padding-left: 100px;
   text-align: right;
 }
+header Link {
+  text-decoration: none;
+  color: #000;
+}
 header .logo .detailLogo {
   font-size: 1.7rem;
+  color: #fff;
 }
+
+header .logo .textLogo {
+  color: #fff;
+}
+
 header nav {
   float: right;
 }
