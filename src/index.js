@@ -4,6 +4,7 @@ import './css/main.css'
 import Details from './components/Details'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import AboutUs from './components/AboutUs'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/details/:post_id' element={<Details />} />
+        <Route path='/about' element={<AboutUs />} />
         <Route
           path='*'
           element={

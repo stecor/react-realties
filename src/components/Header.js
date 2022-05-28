@@ -15,7 +15,9 @@ const Header = () => {
 
         <nav>
           <a href='#1'>Create ads</a>
-          <a href='#1'>About us</a>
+          <Link to={`/about`} style={{ textDecoration: 'none' }}>
+            <a href='#1'>About us</a>
+          </Link>
           <a href='#1'>Log in</a>
           <a href='#1' className='register-btn'>
             Register
