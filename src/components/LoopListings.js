@@ -98,10 +98,11 @@ const LoopListings = (props) => {
                   </div>
                   <div className='view-btn'>
                     <Link
+                      style={{ textDecoration: 'none' }}
                       to={`/details/${listing.post_id}`}
                       key={listing.post_id}
                     >
-                      Details
+                      <span>Details</span>
                     </Link>
                   </div>
                   <span className='post-date'>

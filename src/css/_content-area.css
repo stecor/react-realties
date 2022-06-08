@@ -152,6 +152,7 @@
   color: darkgrey;
 }
 #listings .listings-results .listing {
+  text-decoration: none;
   background: #fff;
   border-radius: 20px;
   margin-bottom: 60px;
@@ -303,6 +304,7 @@
   color: #c8c8c8;
 }
 .view-btn {
+  text-decoration: none !important;
   background: #fffeff;
   color: #828d9d;
   padding: 8px;
@@ -313,10 +315,15 @@
   transition: background 0.3s ease-in-out;
 }
 .view-btn:hover {
-  background: #021847;
-  color: #fff;
+  background: #828d9d;
   cursor: pointer;
+  text-decoration: none;
 }
+
+.view-btn span:hover {
+  color: blue !important;
+}
+
 #pagination {
   width: 100%;
   display: block;
