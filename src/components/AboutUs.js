@@ -11,9 +11,7 @@ const AboutUs = () => {
         <div style={{ display: 'flex' }}>
           <AboutImage style={{ padding: '20px', flex: 1 }} />
 
-          <AboutInfo
-            style={{ padding: '20px', flex: 1, border: '1px solid black' }}
-          />
+          <AboutInfo style={{ padding: '20px', flex: 1 }} />
         </div>
       </section>
     </div>
